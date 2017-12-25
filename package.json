@@ -1,0 +1,24 @@
+{
+    "name": "final_project_rest",
+    "version": "1.0.0",
+    "description": "+ make sure mongodb is intalled and command utilities \"mongod\" and \"mongo\" are available on git bash command line\r + make /c/data/db directory, the default directory where mongodb writes its files, is there\r + before starting the app, make sure to start mongodb in a separate git bash and leave that alone running",
+    "main": "index.js",
+    "scripts": {
+        "test": "npm run test_unitTests_via_jasmine-node",
+        "test_unitTests_via_jasmine-node": "./node_modules/.bin/jasmine-node --matchall test",
+        "start": "npm run start_via_nodemon",
+        "start_via_nodemon": "nodemon src/main_restServer.js"
+    },
+    "keywords": [],
+    "author": "Edison Quiceno Sierra",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.18.2",
+        "cors": "^2.8.4",
+        "express": "^4.16.2",
+        "mongoose": "^4.13.7"
+    },
+    "devDependencies": {
+        "jasmine-node": "^1.14.5"
+    }
+}
